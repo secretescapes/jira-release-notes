@@ -3,11 +3,11 @@ package com.secretescapes.jirereleasenotesauto
 import groovy.transform.ToString
 
 /**
- * Created by dean on 09/10/15.
+ * Container class that can hold multiple Jira Tickets.
  */
 @ToString
 class ReleaseNotes {
 
 	String version
-	List<ReleaseNotes> releaseNotes = []
+	List<JiraTicket> releaseIssues = []
 }

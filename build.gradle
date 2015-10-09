@@ -1,10 +1,19 @@
 group 'com.secretescapes'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 apply plugin: 'groovy'
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
+}
+
+mainClassName = "com.secretescapes.jirereleasenotesauto.MainApp"
+
+run {
+	if ( project.hasProperty("appArgs") ) {
+		args Eval.me(appArgs)
+	}
 }
 
 dependencies {

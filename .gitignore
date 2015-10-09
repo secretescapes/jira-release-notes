@@ -31,3 +31,6 @@ logs/
 
 # Java class files
 *.class
+
+# Genereated release notes HTML file
+release-notes.html
